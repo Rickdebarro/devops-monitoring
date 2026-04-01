@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s  # Define a frequência de coleta de métricas
+
+scrape_configs:
+  - job_name: 'flask-app'
+    static_configs:
+      - targets: ['flask-app:5000']
